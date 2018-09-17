@@ -3711,7 +3711,7 @@ input, select, textarea {
 #projects-divider{
 	height: 40vh;
 	width: 100%;
-	background-image: url('/Users/l245854/Desktop/ProfessionalDevelopment/PersonalPortfolio/sunsetCopy.jpg');
+	background-image: url('../../images/sunsetCopy.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -3768,7 +3768,7 @@ input, select, textarea {
 #techskills-divider{
 	height: 40vh;
 	width: 100%;
-	background-image: url('/Users/l245854/Desktop/ProfessionalDevelopment/PersonalPortfolio/sunset2.jpg');
+	background-image: url('../../images/sunset2.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
