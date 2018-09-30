@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	 crossorigin="anonymous">
 	<link href="css/smoothness/jquery-ui-1.9.0.custom.css" rel="stylesheet">
-	
+
 </head>
 
 <body class="landing is-preload">
@@ -46,7 +46,10 @@
 									<a href="index.html">Home</a>
 								</li>
 								<li>
-									<a href="#projects-divider" class="more scrolly">Previous Projects</a>
+									<a href="#one" class="more scrolly">About</a>
+								</li>
+								<li>
+									<a href="#projects-divider" class="more scrolly">Projects</a>
 								</li>
 								<li>
 									<a href="#techskills-divider" class="more scrolly">Technical Skills</a>
@@ -70,7 +73,7 @@
 					<span>A</span>
 					<span style="color:#E88441">WEBSITE</span>
 				</h2>
-				<br/>
+				<br />
 				<h2>TOGETHER.</h2>
 				<!-- <p>Another fine responsive<br />
 							site template freebie<br />
@@ -88,11 +91,16 @@
 				<div class='about-photo-container'>
 					<header class="major">
 						<h2> About Me </h2>
-						<p>I believe in the power of web technologies for exploring data driven solutions to intriguing research questions. I
-							enjoy learning and have a strong background in electronic data collection, scaffolding research inquires, and developing
-							rich data visualizations to communicate results. My career as a web developer and background in health science uniquely
-							position me to think critically when solving problems across diverse domains. Additionally, I enjoy finding design
-							driven solutions to provide websites with a rich UI. When not coding, I will be found baking cookies or exploring
+						<p>I believe in the power of web technologies for exploring data driven solutions to intriguing research
+							questions. I
+							enjoy learning and have a strong background in electronic data collection, scaffolding research inquires, and
+							developing
+							rich data visualizations to communicate results. My career as a web developer and background in health science
+							uniquely
+							position me to think critically when solving problems across diverse domains. Additionally, I enjoy finding
+							design
+							driven solutions to provide websites with a rich UI. When not coding, I will be found baking cookies or
+							exploring
 							the wonders of the natural world.
 						</p>
 					</header>
@@ -116,18 +124,53 @@
 		<section id="two" class="wrapper alt style2">
 			<section class="spotlight">
 				<div class="image">
-					<img src="images/palssDash.png" alt="" />
+						<img src="images/palssDash.png" alt="" />
+
+					<!-- Image Carousel
+
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+							<img src="images/palssDash.png" alt="Login">
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/PALSS_map.png" alt="Map" >
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/PALSS_dashboard.png" alt="Dashboard">
+						</div>
+
+					</div>
+					-->
+
+					<!-- Left and right controls -->
+					<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
 				</div>
+
+				<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+
+
 				<div class="content">
 					<div class='header-hr'>
 						<h2>Predictive Analytics for Laboratory Safety and Security (PALSS)</h2>
-						<hr/>
+						<hr />
 					</div>
-					<p>PALSS Dash is a prototype application built with the intent of reducing the incidence of workplace accidents. It enables
-						management to go beyond the tabular data and explore when and where events have occurred to enhance planning and preparation.
-						This application was a personal project using a Node.js backend. The UI was utilized the React framework and data visualization
+					<p style="text-align: center">PALSS Dash is a prototype application built with the intent of reducing the incidence of workplace accidents.
+						It enables
+						management to go beyond the tabular data and explore when and where events have occurred to enhance planning and
+						preparation.
+						This application was a personal project using a Node.js backend. The UI was utilized the React framework and data
+						visualization
 						was developed using D3 wrappers.</p>
-					<p>
+					<p style="text-align: center">
 						<a href='https://palss-dash.forestcodes.com/'>Explore the PALSS Dashboard here</a> and see the
 						<a href='https://github.com/faltherr/PALSS_Dash'>code on GitHub</a>
 					</p>
@@ -140,13 +183,19 @@
 				<div class="content">
 					<div class='header-hr'>
 						<h2>Analytics for the Investigation of Disease Outbreaks (AIDO)</h2>
-						<hr/>
+						<hr />
 					</div>
-					<p>AIDO is a decision support tool that is intended for use during infectious disease outbreaks. It provides a user with
-						an ordered list of outbreaks that are grouped by a similarity algorithm to provide the most relevant information to
-						a given input scenario. My work on this project included user interface design, backend research, and development of
+					<p style="text-align: center">AIDO is a decision support tool that is intended for use during infectious disease outbreaks. It provides a
+						user with
+						an ordered list of outbreaks that are grouped by a similarity algorithm to provide the most relevant information
+						to
+						a given input scenario. My work on this project included user interface design, backend research, and development
+						of
 						an automated statistical test to identify disease specific properties for inclusion in the similarity algorithm.</p>
-					<a href='https://aido.bsvgateway.org/'>Explore AIDO here</a>
+					<p style="text-align: center">
+						<a href='https://aido.bsvgateway.org/'>Explore AIDO here</a>
+					</p>
+						
 				</div>
 			</section>
 			<section class="spotlight">
@@ -156,17 +205,25 @@
 				<div class="content">
 					<div class='header-hr'>
 						<h2>Re-emerging Disease Alert (RED Alert)</h2>
-						<hr/>
+						<hr />
 					</div>
-					<p>RED Alert is a web application developed to help users prepare and better plan for infectious diseases that have re-emerged
-						as a public health threat. The application's intended scope of use is for observing historical disease trends in a
-						way that allows users to better understand the geospatial and temporal context of a situation of interest. Additionally,
-						RED Alert supports hypothesis generation of disease impact on a global scale. My work on this project included designing
-						the user interface, developing a framework for the implementation of a machine learning classifier, and collaborating
-						with subject matter experts at the World Health Organization and Centers for Disease Control to develop a quantifiable
+					<p style="text-align: center">RED Alert is a web application developed to help users prepare and better plan for infectious diseases that
+						have re-emerged
+						as a public health threat. The application's intended scope of use is for observing historical disease trends in
+						a
+						way that allows users to better understand the geospatial and temporal context of a situation of interest.
+						Additionally,
+						RED Alert supports hypothesis generation of disease impact on a global scale. My work on this project included
+						designing
+						the user interface, developing a framework for the implementation of a machine learning classifier, and
+						collaborating
+						with subject matter experts at the World Health Organization and Centers for Disease Control to develop a
+						quantifiable
 						definition of re-emergence.</p>
-					<a href="https://redalert.bsvgateway.org/">Explore RED Alert Here</a>
-					<br/>
+						<p style="text-align: center">
+							<a href="https://redalert.bsvgateway.org/">Explore RED Alert Here</a>
+						</p>
+					<br />
 				</div>
 			</section>
 		</section>
@@ -182,10 +239,11 @@
 			<div class="inner">
 				<header class="major">
 					<h2>Explore the tools that help me provide exceptional service for my clients</h2>
-					<p>As a webdeveloper and data analyst I have experience with several technologies, but I am constantly learning more. If
+					<p>As a webdeveloper and data analyst I have experience with several technologies, but I am constantly learning
+						more. If
 						you don't see a framework or a language that you would like to work with,
-						<a href='#cta' class='more scrolly'>ask me</a> about my experience,
-						<a href='https://github.com/faltherr'>visit my GitHub repository</a>, or view my resume.</p>
+						<a href='#cta' class='more scrolly'>ask me</a> about my experience or
+						<a href='https://github.com/faltherr'>visit my GitHub repository</a>.</p>
 				</header>
 				<ul class="features">
 					<li class="fab fa-js-square">
@@ -198,34 +256,42 @@
 					</li>
 					<li class="fab fa-css3-alt">
 						<h3>CSS</h3>
-						<p>The ability to design ornante front end user interfaces come from this cornerstone of web programming. CSS3 is utilized
+						<p>The ability to design ornante front end user interfaces come from this cornerstone of web programming. CSS3 is
+							utilized
 							in all of my web projects.</p>
 					</li>
 					<li class="fas fa-database">
 						<h3>SQL</h3>
-						<p>I have worked with several relational database management systems including the dialects Postgres, mySQL, and SQLite.
-							</p>
+						<p>I have worked with several relational database management systems including the dialects Postgres, mySQL, and
+							SQLite.
+						</p>
 					</li>
 					<li class="fab fa-react">
 						<h3>React</h3>
-						<p>React is my preferred framework due to the organizational benefits of component-based architecture and the simplicity
-							of a unidirectional data flow. Redux complements React for data management facilitating reactive design on multiple
+						<p>React is my preferred framework due to the organizational benefits of component-based architecture and the
+							simplicity
+							of a unidirectional data flow. Redux complements React for data management facilitating reactive design on
+							multiple
 							components</p>
 					</li>
 					<li class="fab fa-node">
 						<h3>Node.js</h3>
-						<p>Node.js is my favorite backend scripting language. I use it to prop up a server capable of handling multiple URL requests
+						<p>Node.js is my favorite backend scripting language. I use it to prop up a server capable of handling multiple
+							URL requests
 							and interacting with my databases.</p>
 					</li>
 					<li class="fab fa-r-project">
 						<h3>R</h3>
-						<p>R is the language I use most frequently for performing statistical analysis and data cleaning. The clean syntax and
-							depth of available libraries enable me to tackle almost any analysis task. I also have experience working in SAS and
+						<p>R is the language I use most frequently for performing statistical analysis and data cleaning. The clean
+							syntax and
+							depth of available libraries enable me to tackle almost any analysis task. I also have experience working in SAS
+							and
 							STATA.</p>
 					</li>
 					<li class="fas fa-globe-americas">
 						<h3>ArcGIS</h3>
-						<p>ArcGIS was used in several projects for descriptive mapping and spatial analysis. It is one of my favorite technologies
+						<p>ArcGIS was used in several projects for descriptive mapping and spatial analysis. It is one of my favorite
+							technologies
 							for visualizing data.</p>
 					</li>
 				</ul>
@@ -238,7 +304,7 @@
 				<div class='form-container'>
 					<header>
 						<h2>Want to get in contact?</h2>
-						<br/>
+						<br />
 						<p>Tell me what inspires you, or ask how I can help bring your ideas to life.</p>
 					</header>
 					<form method="POST" action="https://formspree.io/faltherr1@gmail.com">
@@ -254,6 +320,11 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<ul class="icons">
+				<li>
+					<a href="https://www.linkedin.com/in/forest-altherr/" class="icon fa-linkedin">
+						<span class="label">LinkedIn</span>
+					</a>
+				</li>
 				<li>
 					<a href="https://github.com/faltherr" class="icon fa-github">
 						<span class="label">Github</span>
@@ -293,6 +364,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/carousel.js"></script>
 	<script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script>
 	<script src="js/jquery-ui-1.9.0.custom.js"></script>
 

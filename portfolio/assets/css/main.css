@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+* {box-sizing:border-box}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1793,7 +1795,7 @@ input, select, textarea {
 	}
 
 	section.special, article.special {
-		text-align: left;
+		text-align: center;
 	}
 
 	header p {
@@ -3117,7 +3119,13 @@ input, select, textarea {
 
 			.wrapper.style3 header.major p {
 				color: #d3d4e4;
+				text-align: center;
 			}
+
+			/* .wrapper.style3 header.major h2 {
+				color: #d3d4e4;
+				text-align: center;
+			} */
 
 			.wrapper.style3 label {
 				color: #ffffff;
@@ -4285,3 +4293,69 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.slideshow-container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		position: relative;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden
+	  }
+/* Hide the images by default */
+	  .mySlides {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	border-bottom: none;
+  }
+
+  a.next{
+	text-decoration: none !important;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
