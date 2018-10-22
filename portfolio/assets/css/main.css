@@ -2745,7 +2745,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		.spotlight .image {
+		.spotlight .slideshow-container {
 			-moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
@@ -2757,7 +2757,7 @@ input, select, textarea {
 			margin: 2%;
 		}
 
-			.spotlight .image img {
+			.spotlight .slideshow-container img {
 				border-radius: 0;
 				height: 100%;
 				width: 100%;
@@ -4304,8 +4304,32 @@ input, select, textarea {
 		align-items: center;
 		overflow: hidden
 	  }
-/* Hide the images by default */
-	  .mySlides {
+
+	  /* Default values for slides to be shown or hidden in RED Alert */
+	  
+	/* Hide the images by default */
+	  .mySlides_GMR {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+
+	/* Hide the images by default */
+	.mySlides_PALSS {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+
+	/* Hide the images by default */
+	.mySlides_AIDO {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+
+	/* Hide the images by default */
+	.mySlides_RED{
 		display: none;
 		height: 100%;
 		width: 100%;
@@ -4335,6 +4359,11 @@ input, select, textarea {
   .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+	  left:0;
+	  border-radius: 3px 0 0 3px;
   }
 
   /* On hover, add a black background color with a little bit see-through */
